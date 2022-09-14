@@ -12,6 +12,7 @@ const theatersRouter = require("./theaters/theaters.router")
 app.use(cors())
 app.use(express.json())
 
+app.get('/', (req, res) => res.send('Hello World!'))
 app.use("/movies", moviesRouter)
 app.use("/reviews", reviewsRouter)
 app.use("/theaters", theatersRouter)
