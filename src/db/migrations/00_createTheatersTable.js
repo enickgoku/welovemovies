@@ -10,8 +10,8 @@ exports.up = function(knex) {
       table.string("zip")
       table.timestamps(true, true)
   })
-};
+}
 
 exports.down = function(knex) {
   return knex.schema.dropTable("theaters")
-};
+}

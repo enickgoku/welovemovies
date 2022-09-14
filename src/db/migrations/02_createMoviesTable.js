@@ -9,8 +9,8 @@ exports.up = function(knex) {
     table.string("image_url")
     table.timestamps(true, true)
   })
-};
+}
 
 exports.down = function(knex) {
   return knex.schema.dropTable("movies")
-};
+}
